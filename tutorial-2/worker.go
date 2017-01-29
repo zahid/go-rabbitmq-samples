@@ -71,6 +71,7 @@ func main() {
 			workTime := time.Duration(numberOfDots)
 			time.Sleep(workTime * time.Second)
 			log.Printf("Done")
+			incomingMessage.Ack(false)
 		}
 	}()
 
