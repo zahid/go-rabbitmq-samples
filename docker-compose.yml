@@ -1,0 +1,8 @@
+version: '2'
+services:
+    rabbitmq:
+        container_name: rabbitmq
+        image: rabbitmq:alpine
+        ports:
+            - 5672:5672
+        
